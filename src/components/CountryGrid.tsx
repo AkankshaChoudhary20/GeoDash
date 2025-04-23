@@ -2,8 +2,8 @@ import { Country } from "@/types/Country";
 import { CountryCard } from "./CountryCard";
 
 interface Props {
-  countries: Country[];
-  onSelect: (country: Country) => void;
+  countries: Country[]; // Use the imported `Country` type for cleaner code
+  onSelect: (country: Country) => void; // Ensure onSelect accepts a `Country` type
 }
 
 export const CountryGrid = ({ countries, onSelect }: Props) => {

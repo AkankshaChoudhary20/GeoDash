@@ -1,14 +1,10 @@
 export interface Country {
-  name: {
-    common: string;
-  };
-  capital: string[];
+  name: { common: string };
+  capital?: string[];
   region: string;
   population: number;
-  flags: {
-    png: string;
-  };
-  currencies?: Record<string, { name: string; symbol: string }>;
-  languages?: Record<string, string>;
   timezones?: string[];
+  languages?: Record<string, string>;
+  currencies?: Record<string, { name: string; symbol: string }>;
+  flags: { png: string; svg: string };
 }
